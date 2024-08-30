@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class CustomListTile extends StatelessWidget {
@@ -19,21 +20,21 @@ class CustomListTile extends StatelessWidget {
       child: ListTile(
         leading: Image.asset(
           icon,
-          width: 20,
-          height: 20,
+          width: 20.w,
+          height: 20.h,
         ),
         title: Text(
           title,
           style: TextStyle(
               color: Color(0xff181725),
-              fontSize: 18,
+              fontSize: 18.sp,
               fontWeight: FontWeight.bold),
         ),
         subtitle: Text(
           subtitle,
           style: TextStyle(
               color: Color(0xff7C7C7C),
-              fontSize: 16,
+              fontSize: 16.sp,
               fontWeight: FontWeight.w300),
         ),
         trailing: Row(
@@ -43,7 +44,7 @@ class CustomListTile extends StatelessWidget {
               trailingText,
               style: TextStyle(
                   color: Color(0xff181725),
-                  fontSize: 16,
+                  fontSize: 16.sp,
                   fontWeight: FontWeight.bold),
             ),
             Icon(

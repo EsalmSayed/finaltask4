@@ -94,24 +94,24 @@ class _HomeScreenState extends State<HomeScreen> {
         type: BottomNavigationBarType.fixed,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.shopping_cart),
+            icon: ImageIcon(AssetImage('assets/images/cart.png')),
             label: 'Cart',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.search),
+            icon: ImageIcon(AssetImage('assets/images/search.png')),
             label: 'Explore',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.store),
+            icon: ImageIcon(AssetImage('assets/images/store.png')),
             label: 'shop',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.favorite),
+            icon: ImageIcon(AssetImage('assets/images/heart.png')),
             label: 'Favourite',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: 'User',
+            icon: ImageIcon(AssetImage('assets/images/user.png')),
+            label: 'account',
           ),
         ],
         currentIndex: selected,
